@@ -54,17 +54,14 @@ User Action:        Reaction
 
  Characteristics:	 User    
 
- Social:		     Male,female                                  
-					 16-99 age                                    
- 
- Motivation          High motivation for studing                 
- environment:        				                                
-
- Skills &			 Basic computer skills                       
- abilities:			 basic knowledge of English language (A1)     
-
- Working 			 Desktop computer                             
- environment:		                                             
+ Social:		     Male,female 16-99 age  
+	                                
+ Motivation environment: High motivation for studing                
+       				                            
+ Skills & abilities: Basic computer skills , basic knowledge of English language (A1)                          
+		
+ Working environment: Desktop computer                             
+                                              
 
 
 
