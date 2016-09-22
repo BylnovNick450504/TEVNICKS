@@ -20,58 +20,52 @@ The product TEVNICKS is designed for improving knowledge of english vocabulary.
 
 	The product will have user-frinedly interface and will be availble for wide audience.
 
-====================================================================
-|User Action         |Reaction									   |
-====================================================================
-|create new 		 |create new user with its own databases       |
---------------------------------------------------------------------
-|log in 			 |system allows user to use main functional of |
-|					 |the product                                  |
--------------------------------------------------------------------- 
-|exit				 |exit the product	                           |
-====================================================================
+
+User Action:      Reaction									   
+
+1. create new :	  create new user with its own databases       
+2. log in 	:     system allows user to use main functional of 
+			      the product                         
+3. exit	    :     exit the product	                        
 
 
-====================================================================
-|Vocabulary part of the product (word room)                        |
-====================================================================
-|User Action          |Reaction                                    |
---------------------------------------------------------------------
-|add word		      |add new english word to user's DB           |
---------------------------------------------------------------------
-|edit word            |change word or its translation              |
---------------------------------------------------------------------
-|delete word          |delete word from DB                         |
---------------------------------------------------------------------
+#Vocabulary part of the product (word room) #
+
+User Action        Reaction  
+
+1. add word    :	   add new english word to user's DB           
+2. edit word   :     change word or its translation              
+3. delete word :     delete word from DB             
 
 
-====================================================================
-| Vocabulary part of the product (test room)                       |
-====================================================================
-| User Action         |Reaction                                    |
---------------------------------------------------------------------
-|create test	      |the product creates new test using words    |
-|					  |from user's DB                              |   --------------------------------------------------------------------
-|run test             |user could pass the test                    |
-====================================================================
+
+
+#Vocabulary part of the product (test room) #   
+
+User Action        Reaction   
+
+1. create test :	   the product creates new test using words   
+				   from user's DB                                
+2. run test    :      user could pass the test                    
+
 
 
 ##User Characteristics##
-=====================================================================
-| Characteristics 	 |User                                          |
-=====================================================================
-| Social			 | Male,female                                  |
-|					 | 16-99 age                                    |
---------------------------------------------------------------------- 
-| Motivation         | High motivation for studing                  |
-| environment        |				                                |
----------------------------------------------------------------------
-| Skills &			 | Basic computer skills                        |
-| abilities			 | basic knowledge of English language (A1)     |
----------------------------------------------------------------------
-| Working 			 | Desktop computer                             |
-| environment		 |                                              |
-=====================================================================
+
+ Characteristics 	 User    
+
+ Social			     Male,female                                  
+					 16-99 age                                    
+ 
+ Motivation          High motivation for studing                 
+ environment        				                                
+
+ Skills &			 Basic computer skills                       
+ abilities			 basic knowledge of English language (A1)     
+
+ Working 			 Desktop computer                             
+ environment		                                             
+
 
 
 ##Assumptions and Dependencies##
