@@ -31,7 +31,7 @@ User Action:      Reaction
 
 #Vocabulary part of the product (word room) #
 
-User Action        Reaction  
+User Action:        Reaction  
 
 1. add word    :	   add new english word to user's DB           
 2. edit word   :     change word or its translation              
@@ -40,9 +40,9 @@ User Action        Reaction
 
 
 
-#Vocabulary part of the product (test room) #   
+#Vocabulary part of the product (test room)   
 
-User Action        Reaction   
+User Action:        Reaction   
 
 1. create test :	   the product creates new test using words   
 				   from user's DB                                
@@ -52,19 +52,19 @@ User Action        Reaction
 
 ##User Characteristics##
 
- Characteristics 	 User    
+ Characteristics:	 User    
 
- Social			     Male,female                                  
+ Social:		     Male,female                                  
 					 16-99 age                                    
  
  Motivation          High motivation for studing                 
- environment        				                                
+ environment:        				                                
 
  Skills &			 Basic computer skills                       
- abilities			 basic knowledge of English language (A1)     
+ abilities:			 basic knowledge of English language (A1)     
 
  Working 			 Desktop computer                             
- environment		                                             
+ environment:		                                             
 
 
 
