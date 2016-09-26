@@ -89,6 +89,7 @@ The product workes with big amount of DB, as a result this information requires 
 9. Administrator has ability to delete users.
 10. All buttons should be signed.
 11. Password and login of user should be encrypted.
+
 ##Non-Functional Requirements##
 
 The product should have:
