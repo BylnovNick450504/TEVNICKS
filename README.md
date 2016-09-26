@@ -5,11 +5,11 @@ The product TEVNICKS is designed for improving knowledge of english vocabulary.
 
 ##User Requirments##
 
- 1. User should have opportunity to registration.
- 2. User should have opportunity to add, delete, edit information
+ 1. User should have ability to registration.
+ 2. User should have ability to add, delete, edit information
    in his DB (database).
- 3. User should have opportunity to make and pass tests.
- 4. User should have opportunity to check his results.
+ 3. User should have ability to make and pass tests.
+ 4. User should have ability to check his results.
 
 
 
@@ -33,7 +33,7 @@ User Action:      Reaction
 
 User Action:        Reaction  
 
-1. add word    :	   add new english word to user's DB           
+1. add word    :	 add new english word to user's DB           
 2. edit word   :     change word or its translation              
 3. delete word :     delete word from DB             
 
@@ -44,8 +44,8 @@ User Action:        Reaction
 
 User Action:        Reaction   
 
-1. create test :	   the product creates new test using words   
-				   from user's DB                                
+1. create test :	  the product creates new test using words   
+				   	  from user's DB                                
 2. run test    :      user could pass the test                    
 
 
@@ -72,27 +72,27 @@ The product workes with big amount of DB, as a result this information requires 
 
 ##Functional Requirements##
 
-1. The product is based on Java.
-2. GUI of the product is based on JavaFX.
-3. User's information is stored in databases.
-4. Add new information in DB.
-5. Edit information in DB.
-6. Delete information from DB.
-7. Save information about passed tests.
-8. Create tests according to different criteria:
+
+1. Add new information in DB.
+2. Edit information in DB.
+3. Delete information from DB.
+4. Save information about passed tests.
+5. Create tests according to different criteria:
    by random
    by time
    by count
    by recent added
    by mistakes
-9. View last ten passed tests.
-10. Two categories of users: authorized user, administrator.
-11. Administrator has oppurtunity to check out users, delete users.
-
+6. View last ten passed tests.
+7. Two categories of users: authorized user, administrator.
+8. Administrator has ability to check out users, delete users.
+9. Administrator has ability to delete users.
+10. All buttons should be signed.
+11. Password and login of user should be encrypted.
 ##Non-Functional Requirements##
 
 The product should have:
 
 1. Comfortable user interface
-2. Beautiful design
-3. Full set of feature
+2. The product should be reliable.
+3. The product should run equal on Windows and Linux.
