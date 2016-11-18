@@ -16,6 +16,11 @@ public class Word implements Serializable{
 
     }
 
+    public Word(String word, TreeSet<String> translation) {
+        enWord = word;
+        tr = translation;
+    }
+
     void setWord(String word) {
         enWord = word;
     }
@@ -28,6 +33,14 @@ public class Word implements Serializable{
         tr.add(word);
     }
 
+    public boolean checkAnswer(String answer) {
+        for (String x : tr) {
+            if(x.equals(answer)) {
+                return true;
+            }
+        }
+        return false;
+    }
 
 
     @Override

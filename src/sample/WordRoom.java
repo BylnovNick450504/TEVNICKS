@@ -3,21 +3,19 @@ package sample;/**
  */
 
 import javafx.application.Application;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.layout.FlowPane;
-import javafx.scene.layout.GridPane;
+import javafx.scene.input.MouseButton;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-import java.util.LinkedList;
-import java.util.List;
+import java.util.Arrays;
+import java.util.TreeSet;
 
 public class WordRoom extends Application {
     private Label enWord;
@@ -41,6 +39,8 @@ public class WordRoom extends Application {
 
     private double borderX = 600.0;
     private double borderY = 400.0;
+
+    private Word curWord;
 
     public static void main(String[] args) {
         launch(args);
@@ -108,8 +108,6 @@ public class WordRoom extends Application {
             }
         });
 
-
-
         trBut.setLayoutX(286.0);
         trBut.setLayoutY(133.0);
         trBut.setPrefSize(58.0, 25.0);
@@ -130,17 +128,24 @@ public class WordRoom extends Application {
         wiText.setPrefSize(200,30);
         wiText.setEditable(false);
 
-        trArea = new ListView();
-        trArea.setLayoutX(371.0);
-        trArea.setLayoutY(133.0);
-        trArea.setMaxSize(200,200);
+        setTranslateList();
+        addWord();
 
-        addW = new Button("Add word to dictionary");
-        addW.setLayoutX(402.0);
-        addW.setLayoutY(348.0);
     }
 
     private void drawAll() {
+        base = new Pane();
+        base.maxWidth(borderX);
+        base.maxHeight(borderY);
+        base.minWidth(borderX);
+        base.minHeight(borderY);
+        base.prefWidth(borderX);
+        base.prefHeight(borderY);
+
+        setEnGUI();
+        setTrGUI();
+        setWiGUI();
+
         base.getChildren().addAll(enWord, enText, enBut, translate, trText, trBut,
                                   wordInfo, wiText, trArea, addW, enEr);
         mScene = new Scene(base, borderX, borderY);
@@ -159,6 +164,74 @@ public class WordRoom extends Application {
             }
         }
         return true;
+    }
+
+    private void setTranslateList() {
+        trArea = new ListView();
+        trArea.setLayoutX(371.0);
+        trArea.setLayoutY(133.0);
+        trArea.setMaxSize(200,200);
+        trArea.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                if (trArea.getItems().isEmpty() == false) {
+                    if (event.getButton() == MouseButton.SECONDARY) {
+                        int value = trArea.getSelectionModel().getSelectedIndex();
+                        try {
+                            trArea.getItems().remove(value);
+                        } catch(ArrayIndexOutOfBoundsException ex) {
+                        }
+                    }
+                }
+            }
+        });
+
+    }
+
+    private void addWord() {
+        addW = new Button("Add word to dictionary");
+        addW.setLayoutX(402.0);
+        addW.setLayoutY(348.0);
+        addW.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                enErDown();
+                boolean flagEnWord = true;
+                boolean flagTranslation = true;
+
+                if(isEnWordValid()) {
+                    enErUp("Enter word");
+                    flagEnWord = false;
+                }
+                if(flagEnWord) {
+                    if (!isTranslationValid()) {
+                        enErUp("Enter translation");
+                        flagTranslation = false;
+                    }
+                }
+                if(flagEnWord && flagTranslation) {
+                    String tempWord = wiText.getText();
+                    Object[] tempTr =  trArea.getItems().toArray();
+                    String[] strings = Arrays.stream(tempTr).toArray(String[]::new);
+                    TreeSet<String> listTr = new TreeSet<String>(Arrays.asList(strings));
+                    curWord = new Word(tempWord, listTr);
+                    System.out.println(curWord);
+                    DataBase db = DataBase.getInstance();
+                    db.writeFile(curWord);
+                    db.show();
+                    wiText.clear();
+                    trArea.getItems().clear();
+                }
+            }
+        });
+    }
+
+    private  boolean isEnWordValid() {
+        return wiText.getText().equals("");
+    }
+
+    private  boolean isTranslationValid() {
+        return !trArea.getItems().isEmpty();
     }
 
     private boolean isRusValid(String temp) {
@@ -184,23 +257,17 @@ public class WordRoom extends Application {
         enEr.setVisible(false);
     }
 
+
     @Override
     public void start(Stage primaryStage) {
-        base = new Pane();
-        base.maxWidth(borderX);
-        base.maxHeight(borderY);
-        base.minWidth(borderX);
-        base.minHeight(borderY);
-        base.prefWidth(borderX);
-        base.prefHeight(borderY);
 
-        setEnGUI();
-        setTrGUI();
-        setWiGUI();
-        drawAll();
+        //drawAll();
 
-        primaryStage.setScene(mScene);
+        RunTest test = new RunTest();
+        //primaryStage.setScene(mScene);
+        primaryStage.setScene(test.getRunTest());
         primaryStage.show();
+
 
     }
 

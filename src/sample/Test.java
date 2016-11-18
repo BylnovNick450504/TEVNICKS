@@ -20,7 +20,8 @@ public class Test {
         dog.addTranslation("пес");
         //System.out.println(dog);
         //db.writeFile(cat);
-        //db.show();
+        //db.writeFile(dog);
+        db.show();
         //cat.writeFile();
         //System.out.println( Word.readFile());
     }
