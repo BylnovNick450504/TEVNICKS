@@ -17,5 +17,7 @@
       <Label layoutX="41.0" layoutY="137.0" text="Translation" />
       <TextArea layoutX="371.0" layoutY="86.0" prefHeight="32.0" prefWidth="200.0" />
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="424.0" layoutY="58.0" prefHeight="17.0" prefWidth="95.0" text="Word info" textAlignment="CENTER" />
+      <Button layoutX="402.0" layoutY="348.0" mnemonicParsing="false" text="Add word to dictionary" />
+      <Label alignment="BOTTOM_LEFT" layoutX="120.0" layoutY="67.0" prefHeight="17.0" prefWidth="58.0" text="Use a-z" textFill="#d73417" />
    </children>
 </Pane>

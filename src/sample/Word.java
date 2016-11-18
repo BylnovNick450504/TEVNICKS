@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.TreeSet;
 
 /**
- * Created by User on 18.11.2016.
+ * Created by Nickolay on 15.11.2016.
  */
 public class Word implements Serializable{
     private String enWord;

@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.LinkedList;
 
 /**
- * Created by User on 18.11.2016.
+ * Created by Nickolay on 15.11.2016.
  */
 public class DataBase implements Serializable {
     private final String source = "DB.txt";
