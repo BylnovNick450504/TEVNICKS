@@ -1,0 +1,158 @@
+		
+			<TestCase id = 1>
+				<Description> Logging in the app </Description>
+					<Instructions>
+						1) Start app "TEVNICKS"
+						2) Enter "bigbossbylnov" mail and password "1997"
+						3) Press "Log in"
+					</Instructions>	
+				<Expected Result> You will see main activity with your capture and login. </Expected Result>				
+			</TestCase id = 1>
+
+				<Actual	Result>	
+	
+				
+				</Actual Result>
+
+				<Pass>	
+	
+				
+				</Pass>	
+			
+			
+			<TestCase id = 2>
+				<Description> Adding word </Description>
+					<Instructions>
+						1) Press button "Word Room"
+						2) Choose "create word"
+						3) Enter word in textfield
+						4) Press button "add word"						
+						5) Enter translation in textfield
+						6) Press button "add translation"
+						7) Press button "save word"
+					</Instructions>	
+				<Expected Result> You will see message about successful saving of new word. </Expected Result>				
+			</TestCase id = 2>
+
+				<Actual	Result>	
+	
+				
+				</Actual Result>
+
+				<Pass>	
+	
+				
+				</Pass>	
+
+			<TestCase id = 3>
+				<Description> Editing word </Description>
+					<Instructions>
+						1) Press button "Word Room"
+						2) Choose "edit word"
+						3) Enter word in textfield
+						4) Press button "find word"						
+						5) Change translation in tableview
+						6) Change word in tableview
+						7) Press button "save word"
+					</Instructions>	
+				<Expected Result> You will see message about successful saving of changes. </Expected Result>				
+			</TestCase id = 3>			
+			
+
+				<Actual	Result>	
+	
+				
+				</Actual Result>
+
+				<Pass>	
+	
+				
+				</Pass>	
+
+			<TestCase id = 4>
+				<Description> Deleting word </Description>
+					<Instructions>
+						1) Press button "Word Room"
+						2) Choose "delete word"
+						3) Enter word in textfield
+						4) Press button "find word"						
+						5) Press button "delete word word"
+					</Instructions>	
+				<Expected Result> You will see message about successful deleting. </Expected Result>				
+			</TestCase id = 4>
+
+				<Actual	Result>	
+	
+				
+				</Actual Result>
+
+				<Pass>	
+	
+				
+				</Pass>	
+
+			
+			<TestCase id = 5>
+				<Description> Finding word </Description>
+					<Instructions>
+						1) Press button "Word Room"
+						2) Choose "find word"
+						3) Enter word in textfield
+						4) Press button "find word"						
+						
+					</Instructions>	
+				<Expected Result> You will see word and translaion. </Expected Result>				
+			</TestCase id = 5>
+
+				<Actual	Result>	
+	
+				
+				</Actual Result>
+
+				<Pass>	
+	
+				
+				</Pass>	
+
+			
+			<TestCase id = 6>
+				<Description> Running test </Description>
+					<Instructions>
+						1) Press button "Test Room"
+							
+					</Instructions>	
+				<Expected Result> You will run test. </Expected Result>				
+			</TestCase id = 6>
+			
+		
+				<Actual	Result>	
+	
+				
+				</Actual Result>
+
+				<Pass>	
+	
+				
+				</Pass>				
+		
+			
+			<TestCase id = 7>
+				<Description> Shout down of PC </Description>
+					<Instructions>
+						1) Turn on PC
+						2) Run app
+					</Instructions>	
+				<Expected Result> You will see main window of app. </Expected Result>				
+			</TestCase id = 7>
+
+				<Actual	Result>	
+	
+				
+				</Actual Result>
+
+				<Pass>	
+	
+				
+				</Pass>	
+
+

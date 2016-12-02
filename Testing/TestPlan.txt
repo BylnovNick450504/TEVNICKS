@@ -1,0 +1,138 @@
+Introduction:
+
+In this document submittes test plan for PC application "TEVNICKS". This application contains user's dictionary of English word and tests. 
+  This document contains test aspects and ways for testing. Will be testes risks, that can appear during using application, accordance to SRS document, testing 
+ ascpects, test cases and conclusion.
+
+Test Items (according to ISO 2501-2015):
+
+	- efficiency
+	- productivity
+	- contentment
+	- safety
+	- reliability
+	- protection
+	- understandble
+	- availability
+	
+Risk Issues:
+	
+	- Java version
+	
+Features to be Tested:
+	
+	- Logging
+	
+	- Adding word
+	- Editing word	
+	- Deleting word
+	- Finding word
+	- Runing test	
+	- System behavior in critical situations
+		
+		* Shout down of PC
+		
+
+Test Approach:
+	
+	* Functional testing
+	* Non-functional testing
+	* Sanity Testing
+	* Build Verification Test
+
+Pass / Fail Criteria:
+			
+			
+			<TestCase id = 1>
+				<Description> Logging in the app </Description>
+					<Instructions>
+						1) Start app "TEVNICKS"
+						2) Enter "bigbossbylnov" mail and password "1997"
+						3) Press "Log in"
+					</Instructions>	
+				<Expected Result> You will see main activity with your capture and login. </Expected Result>				
+			</TestCase id = 1>
+			
+			
+			
+			<TestCase id = 2>
+				<Description> Adding word </Description>
+					<Instructions>
+						1) Press button "Word Room"
+						2) Choose "create word"
+						3) Enter word in textfield
+						4) Press button "add word"						
+						5) Enter translation in textfield
+						6) Press button "add translation"
+						7) Press button "save word"
+					</Instructions>	
+				<Expected Result> You will see message about successful saving of new word. </Expected Result>				
+			</TestCase id = 2>
+
+			<TestCase id = 3>
+				<Description> Editing word </Description>
+					<Instructions>
+						1) Press button "Word Room"
+						2) Choose "edit word"
+						3) Enter word in textfield
+						4) Press button "find word"						
+						5) Change translation in tableview
+						6) Change word in tableview
+						7) Press button "save word"
+					</Instructions>	
+				<Expected Result> You will see message about successful saving of changes. </Expected Result>				
+			</TestCase id = 3>			
+			
+			<TestCase id = 4>
+				<Description> Deleting word </Description>
+					<Instructions>
+						1) Press button "Word Room"
+						2) Choose "delete word"
+						3) Enter word in textfield
+						4) Press button "find word"						
+						5) Press button "delete word word"
+					</Instructions>	
+				<Expected Result> You will see message about successful deleting. </Expected Result>				
+			</TestCase id = 4>
+			
+			<TestCase id = 5>
+				<Description> Finding word </Description>
+					<Instructions>
+						1) Press button "Word Room"
+						2) Choose "find word"
+						3) Enter word in textfield
+						4) Press button "find word"						
+						
+					</Instructions>	
+				<Expected Result> You will see word and translaion. </Expected Result>				
+			</TestCase id = 5>
+			
+			<TestCase id = 6>
+				<Description> Running test </Description>
+					<Instructions>
+						1) Press button "Test Room"
+							
+					</Instructions>	
+				<Expected Result> You will run test. </Expected Result>				
+			</TestCase id = 6>
+			
+		
+			
+		
+			
+			<TestCase id = 7>
+				<Description> Shout down of PC </Description>
+					<Instructions>
+						1) Turn on PC
+						2) Run app
+					</Instructions>	
+				<Expected Result> You will see main window of app. </Expected Result>				
+			</TestCase id = 7>
+
+
+Conclusion:
+All given test cases are absolutely aprove accordance of planed application to actual one. 
+
+Functional requirments realization:
+
+Non-functional requirments realisation:
