@@ -86,14 +86,13 @@ The product workes with big amount of DB, as a result this information requires 
 6. View last ten passed tests.
 7. Two categories of users: authorized user, administrator.
 8. Administrator has ability to check out users, delete users.
-9. Administrator has ability to delete users.
-10. All buttons should be signed.
-11. Password and login of user should be encrypted.
+9. All buttons should be signed.
+
 
 ##Non-Functional Requirements##
 
 The product should have:
 
-1. Comfortable user interface
+1. All buttons should be signed.
 2. The product should be reliable.
 3. The product should run equal on Windows and Linux.
