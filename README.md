@@ -93,6 +93,5 @@ The product workes with big amount of DB, as a result this information requires 
 
 The product should have:
 
-1. All buttons should be signed.
-2. The product should be reliable.
-3. The product should run equal on Windows and Linux.
+1. The product should be reliable.
+2. The product should run equal on Windows and Linux.
